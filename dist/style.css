@@ -403,10 +403,10 @@ h5 {
     font-size: 2rem; } }
 
 a {
-  color: #eee;
+  color: #757575;
   text-decoration: none; }
   a:hover, a:active, a:focus {
-    color: #d5d5d5;
+    color: #5c5c5c;
     text-decoration: underline; }
 
 ::selection {
@@ -522,7 +522,7 @@ a.full-button {
 
 [type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
   border: 1px solid #757575;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px white; }
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1), 0 0 6px #c2c2c2; }
 
 textarea {
   overflow: auto;
@@ -717,6 +717,7 @@ kbd {
 .navbar-basic__link {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
+  color: #eee;
   display: flex;
   font-weight: 400;
   align-items: center;
@@ -847,7 +848,8 @@ kbd {
   display: inline-block;
   padding: 1rem;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  color: #eee; }
   .base-navigation ul li a:hover {
     color: #212121; }
 
@@ -931,6 +933,7 @@ body.dimmed {
     display: inline-block;
     font-size: 2rem;
     letter-spacing: .125rem;
+    color: #eee;
     transition: all .3s ease; }
     .slider-nav__logo:hover, .slider-nav__logo:focus, .slider-nav__logo:active {
       text-decoration: none; }
@@ -1006,7 +1009,7 @@ body.dimmed {
   transition: all 0.3s; }
 
 .slider-menu ul li a:hover {
-  color: #d5d5d5; }
+  color: #757575; }
 
 /* 
    * MEDIA QUERIES - Adjust query max-width according to logo/branding size in nav

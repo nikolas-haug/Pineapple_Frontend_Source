@@ -54,6 +54,7 @@
 .navbar-basic__link {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
+  color: $color-grey-light;
   display: flex;
   font-weight: 400;
   align-items: center;
@@ -227,6 +228,7 @@
   padding: $navbar-padding;
   width: 100%;
   height: 100%;
+  color: $color-grey-light;
 
   &:hover {
     color: $font-color-primary;
@@ -362,6 +364,7 @@
         display: inline-block;
         font-size: 2rem;
         letter-spacing: .125rem;
+        color: $color-grey-light;
         transition: all .3s ease;
         
         &:hover,
@@ -440,11 +443,11 @@
     text-transform: uppercase;
     font-size: 1.8rem;
     padding: 1rem;
-    color: $color-link;
+    color: $color-grey-light;
     transition: all 0.3s;
   }
   .slider-menu ul li a:hover {
-    color: $color-link-hover;
+    color: $color-secondary;
   }
   /* 
    * MEDIA QUERIES - Adjust query max-width according to logo/branding size in nav
