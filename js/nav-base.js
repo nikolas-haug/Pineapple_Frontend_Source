@@ -8,7 +8,7 @@
 	var container, button, menu, links, i, len;
 	var hamburger = document.querySelector('.hamburger');
 
-	container = document.getElementById( 'site-navigation' );
+	container = document.getElementById( 'base-navigation' );
 	if ( ! container ) {
 		return;
 	}

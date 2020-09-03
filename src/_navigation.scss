@@ -191,15 +191,11 @@
 }
 
 //===================================================
-// Basic Navigation (built for wordpress dynamic menus)
+// Base Navigation - (nav-base.js) designed for Wordpress themes
 //
 // Use this in the template file:
 //
-//  <nav id="site-navigation" class="main-navigation">
-//
-//    <!-- Optional navbar brand (need to add flex styles for this and adjust mobile button width/etc) -->
-//    <!-- <a href="#" class="navbar-brand">Brand</a> -->
-//
+//  <nav id="basse-navigation" class="base-navigation">
 //      <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false aria-label="Toggle Nav Menu">
 //          <span class="hamburger"></span>
 //      </button>
@@ -208,8 +204,9 @@
 //  </nav>
 //
 //===================================================
-.main-navigation {
+.base-navigation {
   width: 100%;
+  background: $color-primary;
 
   div {
     display: flex;
@@ -225,14 +222,13 @@
   }
 }
 
-.main-navigation ul li a {
+.base-navigation ul li a {
   display: inline-block;
   padding: $navbar-padding;
   width: 100%;
   height: 100%;
 
   &:hover {
-    // background: $navbar-link-color-hover;
     color: $font-color-primary;
   }
 }
@@ -283,18 +279,19 @@
   transform: rotate(-45deg);
 }
 
-@media (max-width: 500px) {
-  .main-navigation {
+// Media query
+@media (max-width: $small) {
+  .base-navigation {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 9999;
 
     ul {
       opacity: 0;
       max-height: 0;
       flex-direction: column;
       overflow: hidden;
-      transition: all 0.3s;
     }
   }
   .menu-toggle {
@@ -313,10 +310,11 @@
       margin-bottom: 0;
     }
   }
-  .main-navigation.toggled ul {
+  .base-navigation.toggled ul {
+    position: relative;
     opacity: 1;
     max-height: 100%;
-    background: #fff;
+    z-index: 9999;
   }
 }
 

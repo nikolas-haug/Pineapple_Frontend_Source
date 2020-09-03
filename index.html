@@ -8,7 +8,7 @@
 </head>
 <body>
     
-        <div class="navbar-basic">
+        <!-- <div class="navbar-basic">
             <nav class="navbar-basic__container container-med">
                 <a href="/" class="navbar-basic__home-link">
                     <div class="navbar-basic__logo"></div>
@@ -27,8 +27,27 @@
                 </ul>
                 </div>
             </nav>
-        </div>
+        </div> -->
 
+        <nav id="base-navigation" class="base-navigation">
+            <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <div class="base-navigation__container">
+                <ul aria-expanded="false">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">CSS</a>
+                    </li>
+                    <li>
+                        <a href="#">Javascript</a>
+                    </li>
+                </ul>
+            </div>  
+        </nav>
+                
     <main class="main">
         <div class="container">
                 <h2 class="text-center">BUTTONS</h2>
@@ -89,6 +108,7 @@
         </div>
     </main>
 
-    <script src="js/navbar-basic.js"></script>
+    <!-- <script src="js/navbar-basic.js"></script> -->
+    <script src="js/nav-base.js"></script>
 </body>
 </html>
