@@ -21,14 +21,12 @@ $color-grey-light: #eee;
 $color-white: #fff;
 $color-black: #101010;
 
-$color-link: $color-secondary;
-$color-link-hover: darken($color-link, 10%);
-
 // Global
 $global-background-color: $color-grey-light;
 
-// Buttons
-$accent-color: $color-primary;
+// Links
+$color-link: $color-secondary;
+$color-link-hover: darken($color-link, 10%);
 
 //=====================================================
 // CONTAINERS
@@ -104,11 +102,6 @@ $h5-primary: 2rem;
 // Block element spacing
 $typography-margins: 1.2rem;
 
-// Blockquote
-$blockquote-font-size: 1.3rem;
-$blockquote-border-color: $color-grey-dark;
-$blockquote-background-color: transparent;
-
 // Letter spacing
 $letter-spacing-content: .8px;
 $letter-spacing-heading: 1px;
@@ -121,7 +114,7 @@ $margin-utility: 1.5rem;
 $padding-utility: 1.5rem;
 
 //=====================================================
-// Borders
+// BORDERS
 //=====================================================
 
 $border-width: 1px;
@@ -141,7 +134,7 @@ $forms: (
 );
 $input-background: $color-grey-light;
 $input-color: $color-grey-dark;
-$placeholder: darken($accent-color, 20%);
+$placeholder: $color-grey-dark;
 $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);
 $form-border-focus: 1px solid $color-secondary;
@@ -150,38 +143,56 @@ $success: green;
 $error: red;
 
 //======================================================
-// Buttons
+// BUTTONS
 //======================================================
 
-$button-background-color: $color-secondary;
-$button-background-hover: darken($button-background-color, 10%);
+// All button styles ********************
+$button-background-color: $color-primary;
 $button-color: $color-grey-light; 
+$button-background-hover: darken($button-background-color, 10%);
+
 $button-font-weight: 400;
 $button-font-family: "Roboto", "Arial", sans-serif;
 $button-font-size: $font-size-primary;
+$button-line-height: 1;
+$button-text-transform: uppercase;
+
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $button-background-color;
 $button-border-radius: $border-radius;
-$button-text-transform: none;
+
+$button-padding: 1rem 1.5rem;
+$button-margin: 0 0 1.5rem 0;
+
+$button-transition: all 0.3s;
+// End all styles ***********************
 
 // Accent buttons
-$accent-button-background-color: $color-primary;
-$accent-button-color: $color-white;
+$accent-button-background-color: $color-secondary;
+$accent-button-color: $color-grey-light;
 
 // Muted Buttons
-$muted-border: 1px solid $accent-color;
-$muted-border-hover: 1px solid darken($accent-color, 30%);
+$muted-border: 1px solid $color-primary;
+$muted-border-hover: 1px solid lighten($color-primary, 30%);
 $muted-background: transparent;
 $muted-background-hover: transparent;
-$muted-color: darken($accent-color, 50%);
-$muted-color-hover: darken($accent-color, 50%);
+$muted-color: $color-primary;
+$muted-color-hover: $color-secondary;
 
 // Round Buttons
 $round-buttons: 5rem;
 
 //==============================================================================
-// Code
+// BLOCKQUOTES
+//==============================================================================
+
+$blockquote-font-size: 1.3rem;
+$blockquote-border-color: $color-grey-dark;
+$blockquote-background-color: transparent;
+
+//==============================================================================
+// CODE
 //==============================================================================
 
 $code-color: $font-color-primary;
