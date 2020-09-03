@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pineapple Frontend Source Code</title>
+    <link rel="stylesheet" href="dist/style.css">
+</head>
+<body>
+    
+        <div class="navbar-basic">
+            <nav class="navbar-basic__container container-med">
+                <a href="/" class="navbar-basic__home-link">
+                    <div class="navbar-basic__logo"></div>
+                    Website Name
+                </a>
+                <button type="button" class="navbar-basic__toggle" aria-label="Open navigation menu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="navbar-basic__menu">
+                <ul class="navbar-basic__links">
+                    <li class="navbar-basic__item"><a class="navbar-basic__link" href="#">About</a></li>
+                    <li class="navbar-basic__item"><a class="navbar-basic__link" href="#">CSS</a></li>
+                    <li class="navbar-basic__item"><a class="navbar-basic__link" href="#">Javascript</a></li>
+                </ul>
+                </div>
+            </nav>
+        </div>
+
+    <main class="main">
+        <div class="container">
+                <h2 class="text-center">BUTTONS</h2>
+            <div class="row">
+                <div class="col-med-2">
+                    <button>Button</button>
+                </div>
+                <div class="col-med-2">
+                    <a href="#" class="button">A Button</a>
+                </div>
+                <div class="col-med-2">
+                    <input type="submit" value="Input Button">
+                </div>
+                <div class="col-med-2">
+                    <button class="accent-button">Accent Button</button>
+                </div>
+                <div class="col-med-2">
+                    <button class="muted-button">Muted Button</button>
+                </div>
+                <div class="col-med-2">
+                    <button class="round-button">Round Button</button>
+                </div>
+                <div class="col-med-2">
+                    <button class="square-button">Square Button</button>
+                </div>
+                <div class="col-med-2">
+                    <button class="full-button">Full Button</button>
+                </div>
+            </div>
+            <h2 class="text-center">FORMS</h2>
+            <div class="row">
+                <div class="col-med-6">
+                    <form>
+                        <label for="text">Text Label</label>
+                        <input type="text">
+                        <label for="email">Email Label</label>
+                        <input type="email">
+                        <label for="message">Textarea Label</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </form>
+                </div>
+            </div>
+            <h2>CARDS</h2>
+            <div class="row">
+                <div class="col-med-6">
+                    <div class="card">
+                        <div class="card__content">
+                            <span class="card__title">Card Title</span>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam illo doloremque, dolores nihil rerum cum et voluptates laboriosam quod tenetur quas placeat ut delectus commodi sequi ipsum a saepe odit.</p>
+                        </div>
+                        <div class="card__action">
+                            <a href="#" class="button">Action 1</a>
+                            <a href="#" class="button">Action 2</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/navbar-basic.js"></script>
+</body>
+</html>
