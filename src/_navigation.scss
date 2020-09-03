@@ -225,7 +225,7 @@
 
 .base-navigation ul li a {
   display: inline-block;
-  padding: $navbar-padding;
+  padding: 1rem;
   width: 100%;
   height: 100%;
   color: $color-grey-light;
@@ -300,14 +300,14 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: $mobile-navbar-padding;
-    background: $mobile-navbar-background-color;
+    padding: 2.5rem;
+    background: $color-primary;
     border: none;
     margin-bottom: 0;
     &:focus,
     &:active,
     &:hover {
-      background: $mobile-navbar-background-color;
+      background: $color-primary;
       border: none;
       margin-bottom: 0;
     }

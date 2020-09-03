@@ -73,18 +73,18 @@ $row-gallery-height: 20rem;
 
 // Set the default to 1rem size for browser window resize
 $base-font-size: 62.5%;
-$base-line-height: 1.8;
+$base-line-height: 1.6;
 
 // Global
 $font-family-primary: "Roboto", "Arial", sans-serif;
 $font-color-primary: $color-grey-dark;
-$font-color-secondary: $color-white; 
+$font-color-secondary: $color-grey-light;
 $font-size-primary: 1.6rem;
 
 // Headings
 $heading-font-family-primary: "Roboto", "Arial", sans-serif;
 $heading-font-color-primary: $color-grey-dark;
-$heading-font-weight: 700;
+$heading-font-weight: 600;
 $heading-line-height: 1.2;
 
 // Small headings
@@ -129,17 +129,6 @@ $border-style: solid;
 $border-color: $color-grey-dark;
 $border-radius: .5rem;
 $borders: $border-width $border-style $border-color;
-
-//=====================================================
-// NAVIGATION
-//=====================================================
-
-$navbar-padding: 1rem;
-$mobile-navbar-padding: 2.5rem;
-
-$navbar-link-color-hover: darken($color-primary, 15%);
-
-$mobile-navbar-background-color: $color-primary;
 
 //=====================================================
 // FORMS

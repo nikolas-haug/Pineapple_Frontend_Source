@@ -351,7 +351,7 @@ html {
   color: #212121; }
 
 body {
-  line-height: 1.8;
+  line-height: 1.6;
   background-color: #eee;
   font-size: 1.6rem; }
 
@@ -369,7 +369,7 @@ h3,
 h4,
 h5 {
   margin: 1.2rem 0;
-  font-weight: 700;
+  font-weight: 600;
   font-family: "Roboto", "Arial", sans-serif;
   letter-spacing: 1px;
   line-height: 1.2;
@@ -539,10 +539,11 @@ legend {
   font-weight: 600; }
 
 select {
-  color: #fff;
+  color: #212121;
   -webkit-appearance: none;
   -moz-appearance: none;
-  line-height: 1.5; }
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) right center no-repeat;
+  line-height: 1.6; }
 
 select::-ms-expand {
   display: none; }
