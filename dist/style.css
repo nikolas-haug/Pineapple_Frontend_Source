@@ -726,7 +726,7 @@ kbd {
   justify-content: center;
   width: 100%;
   padding: 1rem 1.5rem;
-  border-radius: .2rem; }
+  border-radius: 0.2rem; }
 
 .navbar-basic__link:focus,
 .navbar-basic__link:hover {
@@ -799,7 +799,7 @@ kbd {
   left: 0;
   right: 0;
   margin: 1.4rem;
-  border-radius: .2rem;
+  border-radius: 0.2rem;
   box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
 
 .navbar-basic.opened .navbar-basic__links {
