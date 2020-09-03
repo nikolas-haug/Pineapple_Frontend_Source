@@ -319,121 +319,158 @@
 }
 
 //===================================================
-// Secondary nav (built for wordpress dynamic menus)
+// Slider Nav - (slider-nav.js)
 //
-// <nav class="slider-menu">
-//    WP MENU BELOW
-//     <ul>
-//         <li><a href="index.html">Welcome</a></li>
-//     </ul>
-//    END WP MENU
-// </nav>
-// <div class="slider-menu__toggler"><span></span></div>
+// <div class="slider-nav">
+//     <div class="container-lg">
+//         <div class="row">
+//             <div class="col-10 col-med-4 dis-flex align-items-center">
+//                 <a href="#logo" class="slider-nav__logo">
+//                      LOGO
+//                 </a>
+//             </div>
+//             <div class="col-2 col-med-8">
+//                 <nav class="slider-menu">
+//                     <div>
+//                         <ul>
+//                             <li><a href="#">About</a></li>
+//                             <li><a href="#">CSS</a></li>
+//                             <li><a href="#">Javascript</a></li>
+//                         </ul>
+//                     </div>
+//                 </nav>
+//                 <div class="slider-menu__toggler"><span></span></div>
+//             </div>
+//         </div>
+//     </div>
+// </div>
 //
 //===================================================
 /*
-   * MENU BUTTON
-   */
-.slider-menu__toggler {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 999;
-  height: 44px;
-  width: 44px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
-  align-items: center;
-  background: $color-link;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
-}
-.slider-menu__toggler span {
-  left: 8px;
-}
-.slider-menu__toggler span,
-.slider-menu__toggler span::before,
-.slider-menu__toggler span::after {
-  position: absolute;
-  content: "";
-  width: 28px;
-  height: 2.5px;
-  background: $color-white;
-  border-radius: 20px;
-  transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-}
-.slider-menu__toggler span::before {
-  top: -8px;
-}
-.slider-menu__toggler span::after {
-  top: 8px;
-}
-.slider-menu__toggler.active > span {
-  background: transparent;
-}
-.slider-menu__toggler.active > span::before,
-.slider-menu__toggler.active > span::after {
-  background: darken($color-white, 15%);
-  top: 0px;
-}
-.slider-menu__toggler.active > span::before {
-  transform: rotate(-225deg);
-}
-.slider-menu__toggler.active > span::after {
-  transform: rotate(225deg);
-}
+ * MENU BUTTON
+ */
+ body.dimmed {
+    background: rgba(0, 0, 0, 0.85);
+  }
 
-/*
+ .slider-nav {
+    width: 100%;
+    padding: 1rem 0;
+    background: $color-primary;
+
+    &__logo {
+        display: inline-block;
+        font-size: 2rem;
+        letter-spacing: .125rem;
+        transition: all .3s ease;
+        
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+  }
+  
+ .slider-menu__toggler {
+    position: relative;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: none; // hide on larger viewport
+    align-items: center;
+    justify-content: center;
+  }
+  .slider-menu__toggler span,
+  .slider-menu__toggler span::before,
+  .slider-menu__toggler span::after {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 2.5px;
+    background: $color-grey-light;
+    border-radius: 20px;
+    transition: all .5s;
+  }
+  .slider-menu__toggler span::before {
+    top: -8px;
+  }
+  .slider-menu__toggler span::after {
+    top: 8px;
+  }
+  // active menu classes
+  .slider-menu__toggler.active > span {
+    position: fixed;
+    background: transparent;
+  }
+  .slider-menu__toggler.active > span::before,
+  .slider-menu__toggler.active > span::after {
+    top: 0px;
+  }
+  .slider-menu__toggler.active > span::before {
+    transform: rotate(-225deg);
+    background: $color-grey-dark;
+  }
+  .slider-menu__toggler.active > span::after {
+    transform: rotate(225deg);
+    background: $color-grey-dark;
+  }
+  /*
     * SLIDING MENU PANEL - Desktop view
   */
-.slider-menu {
-  height: 100%;
-  background: $global-background-color;
-  justify-content: center;
-  transition: 0.3s left cubic-bezier(0.77, 0, 0.175, 1);
-}
-.slider-menu.active {
-  left: 0;
-}
-.slider-menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end;
-  margin: 0;
-}
-.slider-menu ul li a {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  padding: 1rem;
-  color: $color-link;
-  transition: all 0.3s;
-}
-.slider-menu ul li a:hover {
-  color: $color-link-hover;
-}
-/* 
-   * MEDIA QUERIES - Mobile view
-  */
-@media only screen and (max-width: 755px) {
   .slider-menu {
-    width: 250px;
-    left: -250px;
-    padding: 5rem 0 0 2rem;
-  }
-  .slider-menu {
-    position: fixed;
-    top: 0;
-    z-index: 998;
-    clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     height: 100%;
-    /* overflow: scroll; */
+    background: inherit;
+    justify-content: center;
+    transition: 0.3s right ease-out;
+  }
+  .slider-menu.active {
+    right: 0;
   }
   .slider-menu ul {
-    flex-direction: column;
-  }
-  .slider-menu__toggler {
+    list-style: none;
     display: flex;
+    justify-content: flex-end;
+    margin: 0;
   }
-}
+  .slider-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    padding: 1rem;
+    color: $color-link;
+    transition: all 0.3s;
+  }
+  .slider-menu ul li a:hover {
+    color: $color-link-hover;
+  }
+  /* 
+   * MEDIA QUERIES - Adjust query max-width according to logo/branding size in nav
+  */
+  @media only screen and (max-width: $small) {
+    .slider-menu {
+      width: 25rem;
+      right: -25rem;
+      padding: 5rem 0 0 3.5rem;
+    }
+    .slider-menu {
+      position: fixed;
+      top: 0;
+      z-index: 998;
+      height: 100%;
+      background: $global-background-color;
+    }
+    .slider-menu ul {
+      flex-direction: column;
+      padding: 1.5rem;
+    }
+    .slider-menu ul li a {
+      font-size: 2rem;
+      color: $color-grey-dark;
+    }
+    .slider-menu__toggler {
+      display: flex;
+    }
+  }
