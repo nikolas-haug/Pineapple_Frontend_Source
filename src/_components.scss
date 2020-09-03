@@ -225,15 +225,16 @@ label {
 }
 
 // Checkboxes & Radio buttons
-#{$otherForms} {
+#{$other-forms} {
+
+  & + label {
+    display: inline-block;
+  }
 
   &:checked + label {
     color: $color-secondary;
   }
 
-  & + label {
-    display: inline-block;
-  }
 }
 
 @include small-breakpoint {
@@ -275,11 +276,16 @@ textarea {
 }
 
 // Placeholder Text
-::-webkit-input-placeholder,
-::-moz-placeholder,
-:-moz-placeholder,
-:-ms-input-placeholder {
-  color: $placeholder;
+::-webkit-input-placeholder { /* Edge */
+  color: $placeholder-color;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+  color: $placeholder-color;
+}
+
+::placeholder {
+  color: $placeholder-color;
 }
 
 //===================================================

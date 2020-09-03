@@ -134,13 +134,14 @@ $forms: (
 
 $input-background: $color-grey-light;
 $input-color: $color-grey-dark;
-$placeholder: $color-grey-dark;
+$placeholder-color: $color-secondary;
+
 $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);
 $form-border-focus: 1px solid $color-secondary;
 
 // Checkboxes & Radio buttons
-$otherForms: ( "[type="checkbox"], [type="radio"]" );
+$other-forms: ( "[type="checkbox"], [type="radio"]" );
 
 $success: green;
 $error: red;
