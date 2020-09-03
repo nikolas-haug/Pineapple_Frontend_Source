@@ -62,7 +62,7 @@ $grid-padding: 1.5rem;
 // Custom col padding
 $grid-column-padding-custom: .5rem;
 
-// Rows
+// Gallery row fixed height
 $row-gallery-height: 20rem;
 
 //=====================================================
@@ -82,6 +82,7 @@ $font-size-primary: 1.6rem;
 // Headings
 $heading-font-family-primary: "Roboto", "Arial", sans-serif;
 $heading-font-color-primary: $color-grey-dark;
+$heading-font-color-secondary: $color-grey-light;
 $heading-font-weight: 600;
 $heading-line-height: 1.2;
 
@@ -127,11 +128,10 @@ $borders: $border-width $border-style $border-color;
 // FORMS
 //=====================================================
 
-$buttons: (".button, a.button, button, [type=submit], [type=reset], [type=button]");
-
 $forms: (
   "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
 );
+
 $input-background: $color-grey-light;
 $input-color: $color-grey-dark;
 $placeholder: $color-grey-dark;
@@ -139,12 +139,17 @@ $form-border: 1px solid $border-color;
 $form-border-hover: 1px solid darken($border-color, 10%);
 $form-border-focus: 1px solid $color-secondary;
 
+// Checkboxes & Radio buttons
+$otherForms: ( "[type="checkbox"], [type="radio"]" );
+
 $success: green;
 $error: red;
 
 //======================================================
 // BUTTONS
 //======================================================
+
+$buttons: (".button, a.button, button, [type=submit], [type=reset], [type=button]");
 
 // All button styles ********************
 $button-background-color: $color-primary;

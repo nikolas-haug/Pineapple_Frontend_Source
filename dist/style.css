@@ -557,6 +557,12 @@ label {
   display: block;
   margin: 1rem 0 0.5rem; }
 
+[type=checkbox]:checked + label, [type=radio]:checked + label {
+  color: #757575; }
+
+[type=checkbox] + label, [type=radio] + label {
+  display: inline-block; }
+
 @media only screen and (min-width: 850px) {
   .split-form label {
     text-align: right;

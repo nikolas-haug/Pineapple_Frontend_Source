@@ -5,7 +5,7 @@
 */
 
 //===================================================
-// Blockquote for citations etc
+// BLOCKQUOTE
 //
 //     <blockquote>
 // 	      <p>A woman must have money and a room of her own if she is to write fiction.</p>
@@ -28,12 +28,7 @@ blockquote {
 }
 
 //===================================================
-// Buttons
-//
-// Use for:
-//
-// <button>, <a class="button>, <input type="submit">, <input type="button">, <input type="reset">
-//
+// BUTTONS
 //===================================================
 %buttons {
   -webkit-appearance: none;
@@ -141,15 +136,10 @@ a.full-button {
 }
 
 //===================================================
-// Forms
-//
-// Use for:
-//
-//
-//
+// FORMS
 //===================================================
 
-// Display for all input fields (except buttons and checkbox)
+// Display for all input fields (except Buttons, Checkboxes, and Radio buttons)
 %forms {
   display: block;
   border: $form-border;
@@ -190,6 +180,7 @@ a.full-button {
   }
 }
 
+// Textarea
 textarea {
   overflow: auto;
   height: auto;
@@ -231,6 +222,18 @@ label {
   max-width: 100%;
   display: block;
   margin: 1rem 0 0.5rem;
+}
+
+// Checkboxes & Radio buttons
+#{$otherForms} {
+
+  &:checked + label {
+    color: $color-secondary;
+  }
+
+  & + label {
+    display: inline-block;
+  }
 }
 
 @include small-breakpoint {
