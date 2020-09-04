@@ -3,13 +3,6 @@
 	const menu = document.querySelector('.slider-menu');
 	const spanTogglers = document.querySelector('.slider-menu__toggler span');
 	const menuItems = document.querySelectorAll('a[href^="#section"]');
-	// Add additional CSS if Safari
-	const isSafari = !!navigator.userAgent.match(/safari/i) && !navigator.userAgent.match(/chrome/i) && typeof document.body.style.webkitFilter !== "undefined" && !window.chrome;
-
-	if(isSafari) {
-		alert('using Safari!');
-		document.querySelector('.slider-nav').style.height = '6rem';
-	}
 
 	// Helper Function - check for all children of an element
 	function isDescendantOrSelf(parent, child) {
