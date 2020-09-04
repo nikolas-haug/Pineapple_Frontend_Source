@@ -83,12 +83,13 @@
 
 @mixin col-x-list {
   @for $i from 1 through $grid-columns {
-      .col-#{$i}, .col-sm-#{$i}, .col-med-#{$i}, .col-lg-#{$i}, .col-sm, .col-med, .col-lg { @extend %col-styles; }
+      .col-#{$i}, .col-sm-#{$i}, .col-med-#{$i}, .col-lg-#{$i}, .col, .col-sm, .col-med, .col-lg { @extend %col-styles; }
   }
 }
 
 @include col-x-list;
 
+// Row Columns
 [class*="row-cols-"] > * {
   flex: 0 0 100%;
   max-width: 100%; 
