@@ -411,7 +411,7 @@ a {
 
 ::selection {
   background-color: #424242;
-  color: #fff; }
+  color: #f7f7f7; }
 
 /** 
 *
@@ -509,16 +509,16 @@ a.full-button {
   border-radius: 0.5rem;
   padding: 1rem;
   outline: none;
-  background: #eee;
+  background: #f7f7f7;
   color: #212121;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0 0 0.5rem 0;
   font-size: 1.6rem;
   width: 100%;
   max-width: 100%;
   line-height: 1; }
 
 [type=color]:hover, [type=date]:hover, [type=datetime]:hover, [type=datetime-local]:hover, [type=email]:hover, [type=month]:hover, [type=number]:hover, [type=password]:hover, [type=search]:hover, [type=tel]:hover, [type=text]:hover, [type=url]:hover, [type=week]:hover, [type=time]:hover, select:hover, textarea:hover {
-  border: 1px solid #080808; }
+  border: 1px solid #757575; }
 
 [type=color]:focus, [type=color]:active, [type=date]:focus, [type=date]:active, [type=datetime]:focus, [type=datetime]:active, [type=datetime-local]:focus, [type=datetime-local]:active, [type=email]:focus, [type=email]:active, [type=month]:focus, [type=month]:active, [type=number]:focus, [type=number]:active, [type=password]:focus, [type=password]:active, [type=search]:focus, [type=search]:active, [type=tel]:focus, [type=tel]:active, [type=text]:focus, [type=text]:active, [type=url]:focus, [type=url]:active, [type=week]:focus, [type=week]:active, [type=time]:focus, [type=time]:active, select:focus, select:active, textarea:focus, textarea:active {
   border: 1px solid #757575;
@@ -607,7 +607,7 @@ textarea.is-success:active {
 .card {
   position: relative;
   margin: .5rem 0 1rem 0;
-  background-color: #fff;
+  background-color: #f7f7f7;
   transition: box-shadow .25s;
   border-radius: 2px; }
   .card__content {
@@ -658,7 +658,7 @@ textarea.is-success:active {
   .scroll-top-btn::before {
     content: "\2191";
     display: block;
-    color: #fff;
+    color: #f7f7f7;
     font-size: 2.6rem;
     position: absolute;
     left: 16px;
@@ -761,6 +761,8 @@ kbd {
   justify-content: center;
   flex-direction: column;
   margin: 0; }
+  .navbar-basic__toggle:focus, .navbar-basic__toggle:active {
+    background-color: transparent; }
 
 .icon-bar {
   display: block;

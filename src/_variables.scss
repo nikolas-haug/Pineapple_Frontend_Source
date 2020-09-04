@@ -18,7 +18,7 @@ $color-grey-dark: #212121;
 $color-grey-light: #eee; 
 
 // Basic
-$color-white: #fff;
+$color-white: #f7f7f7;
 $color-black: #101010;
 
 // Global
@@ -132,17 +132,24 @@ $forms: (
   "[type=color], [type=date], [type=datetime], [type=datetime-local], [type=email], [type=month], [type=number], [type=password], [type=search], [type=tel], [type=text], [type=url], [type=week], [type=time], select, textarea"
 );
 
-$input-background: $color-grey-light;
+// Colors
+$input-background: $color-white;
 $input-color: $color-grey-dark;
 $placeholder-color: $color-secondary;
 
+// Borders
 $form-border: 1px solid $border-color;
-$form-border-hover: 1px solid darken($border-color, 10%);
+$form-border-hover: 1px solid $color-secondary;
 $form-border-focus: 1px solid $color-secondary;
+
+// Margin and Pading
+$form-margin: 0 0 .5rem 0;
+$form-padding: 1rem;
 
 // Checkboxes & Radio buttons
 $other-forms: ( "[type="checkbox"], [type="radio"]" );
 
+// Alerts
 $success: green;
 $error: red;
 
@@ -153,25 +160,32 @@ $error: red;
 $buttons: (".button, a.button, button, [type=submit], [type=reset], [type=button]");
 
 // All button styles ********************
+
+// Colors
 $button-background-color: $color-primary;
 $button-color: $color-grey-light; 
 $button-background-hover: darken($button-background-color, 10%);
 
+// Typography
 $button-font-weight: 400;
 $button-font-family: "Roboto", "Arial", sans-serif;
 $button-font-size: $font-size-primary;
 $button-line-height: 1;
 $button-text-transform: uppercase;
 
+// Borders
 $button-border-width: 1px;
 $button-border-style: solid;
 $button-border-color: $button-background-color;
 $button-border-radius: $border-radius;
 
-$button-padding: 1rem 1.5rem;
+// Margin and Padding
 $button-margin: 0 0 1.5rem 0;
+$button-padding: 1rem 1.5rem;
 
+// Transition
 $button-transition: all 0.3s;
+
 // End all styles ***********************
 
 // Accent buttons

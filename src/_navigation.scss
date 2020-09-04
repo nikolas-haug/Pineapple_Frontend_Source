@@ -90,6 +90,11 @@
   justify-content: center;
   flex-direction: column;
   margin: 0;
+
+  &:focus,
+  &:active {
+    background-color: transparent;
+  }
 }
 
 .icon-bar {
