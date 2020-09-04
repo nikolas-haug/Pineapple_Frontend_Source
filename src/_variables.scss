@@ -210,6 +210,7 @@ $round-buttons: 5rem;
 $card-color: $color-white;
 $card-title-font-size: 3rem;
 $card-title-line-height: 3rem;
+$card-margins: 0 0 1rem 0;
 
 //==============================================================================
 // BLOCKQUOTES
@@ -218,6 +219,7 @@ $card-title-line-height: 3rem;
 $blockquote-font-size: 1.3rem;
 $blockquote-border-color: $color-grey-dark;
 $blockquote-background-color: transparent;
+$blockquote-cite-font-size: 1rem;
 
 //==============================================================================
 // CODE

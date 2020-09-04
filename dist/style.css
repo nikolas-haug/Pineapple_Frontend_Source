@@ -418,17 +418,6 @@ a {
 * COMPONENTS
 *
 */
-blockquote {
-  background: transparent;
-  margin: 0 0 1.2rem 0;
-  border-left: 10px solid #212121;
-  padding: 0 1.5rem;
-  font-size: 1.3rem; }
-  blockquote cite {
-    display: block;
-    margin-top: 1.2rem;
-    font-size: 1rem; }
-
 .button, a.button, button, [type=submit], [type=reset], [type=button] {
   -webkit-appearance: none;
   display: inline-block;
@@ -609,7 +598,7 @@ textarea.is-success:active {
 
 .card {
   position: relative;
-  margin: .5rem 0 1rem 0;
+  margin: 0 0 1rem 0;
   background-color: #f7f7f7;
   transition: box-shadow .25s;
   border-radius: 2px; }
@@ -641,6 +630,17 @@ textarea.is-success:active {
     padding: 1.5rem 2.5rem; }
     .card__action a, .card__action .button, .card__action button {
       margin: 0; }
+
+blockquote {
+  background: transparent;
+  margin: 0 0 1.2rem 0;
+  border-left: 5px solid #212121;
+  padding: 0 1.5rem;
+  font-size: 1.3rem; }
+  blockquote cite {
+    display: block;
+    margin-top: 1.2rem;
+    font-size: 1rem; }
 
 .scroll-top-button {
   opacity: 0;
@@ -674,17 +674,17 @@ pre {
 
 kbd {
   background-color: #f7f7f7;
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
   border-radius: 3px;
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-  color: #333;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #f7f7f7 inset;
+  color: #212121;
   display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 1.3rem;
   line-height: 1.4;
-  margin: 0 0.1em;
-  padding: 0.1em 0.6em;
-  text-shadow: 0 1px 0 #fff; }
+  margin: 0 .1rem;
+  padding: .1rem .6rem;
+  text-shadow: 0 1px 0 #f7f7f7; }
 
 :not(pre) > code {
   color: #212121;
