@@ -820,8 +820,9 @@ kbd {
     visibility: visible;
     opacity: 1;
     position: static;
-    display: block;
-    height: 100%; }
+    height: 100%;
+    display: flex;
+    align-items: center; }
   .navbar-basic .navbar-basic__links,
   .navbar-basic.opened .navbar-basic__links {
     margin: 0;
