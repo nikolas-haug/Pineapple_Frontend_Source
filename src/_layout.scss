@@ -68,7 +68,7 @@
   margin-left: -#{$grid-padding};
 }
 
-// Clip row by height
+// Gallery Rows
 .row-gallery {
   max-height: $row-gallery-height;
   overflow: hidden;
@@ -106,7 +106,7 @@
   padding-left: 0;
 }
 
-// custom spacing for cols
+// Custom Row Spacing
 .row-custom {
   margin-right: -#{$grid-column-padding-custom};
   margin-left: -#{$grid-column-padding-custom};
