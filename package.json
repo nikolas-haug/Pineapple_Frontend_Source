@@ -1,7 +1,7 @@
 {
-  "name": "lightweight-ui",
-  "version": "1.0.0",
-  "description": "a lightweight frontend framework",
+  "name": "Pineapple Frontend",
+  "version": "2.0.0",
+  "description": "A lightweight and responsive frontend framework with lightweight JS componenets.",
   "main": "index.js",
   "scripts": {
     "devserver": "live-server",
@@ -17,7 +17,7 @@
     "wp:compress": "node-sass dist/style.prefix.css ./style.css --output-style compressed",
     "wp:build": "npm-run-all wp:prefix wp:compress"
   },
-  "author": "niko",
+  "author": "Nikolas Haug",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^9.7.6",
