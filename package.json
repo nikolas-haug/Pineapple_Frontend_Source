@@ -1,5 +1,5 @@
 {
-  "name": "Pineapple Frontend",
+  "name": "pineapple",
   "version": "2.0.0",
   "description": "A lightweight and responsive frontend framework with lightweight JS componenets.",
   "main": "index.js",
