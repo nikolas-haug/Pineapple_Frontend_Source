@@ -27,8 +27,9 @@ modalClicks.forEach(modal => {
 // When the user clicks on <span> (x), close the modal
 modalClose.forEach(item => {
     item.addEventListener('click', (e) => {
+        let modalOverlay = document.querySelector('.modal-overlay');
         closeModals();
-        document.querySelector('.modal-overlay').remove();
+        modalOverlay.parentNode.removeChild(modalOverlay);
     });
 });
 
@@ -36,6 +37,6 @@ modalClose.forEach(item => {
 window.onclick = function (e) {
     if (e.target.classList.contains('modal-overlay')) {
         closeModals();
-        e.target.remove();         
+        e.target.parentNode.removeChild(e.target);        
     }
 }
