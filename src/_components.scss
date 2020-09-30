@@ -414,20 +414,21 @@ table {
   border-spacing: 0;
   width: 100%;
   max-width: 100%;
+  color: $table-color;
 }
 
 // Extra border underneath header
 thead th {
-  border-bottom: 2px solid $border-color;
+  border-bottom: $table-heading-border;
 }
 
 // Extra border above footer
 tfoot th {
-  border-top: 2px solid $border-color;
+  border-top: $table-footer-border;
 }
 
 td {
-  border-bottom: 1px solid $border-color;
+  border-bottom: $table-data-border;
 }
 
 th,
@@ -438,21 +439,22 @@ td {
 
 caption {
   padding: 1.5rem 0;
-  caption-side: bottom;
+  caption-side: $caption-position;
   color: $color-grey-dark;
+  font-style: italic;
 }
 
-.striped-table tbody tr:nth-child(odd) {
+.table-striped tbody tr:nth-child(odd) {
   background-color: $color-secondary;
 }
 
 // Container for responsive tables
-.contain-table {
+.table-overflow {
   overflow-x: auto;
 }
 
 @include small-breakpoint {
-  .contain-table {
+  .table-overflow {
     width: 100%;
   }
 }
